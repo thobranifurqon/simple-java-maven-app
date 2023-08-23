@@ -7,7 +7,7 @@ node {
             sh 'mvn test'
             
         }
-        stage ('Deliver') {
+        stage ('Deploy') {
             
             sh './jenkins/scripts/deliver.sh'
             
