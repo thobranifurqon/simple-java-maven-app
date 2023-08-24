@@ -8,8 +8,9 @@ node {
             
         }
         stage ('Deploy') {
-            
+            timeout(time: 1, unit:'MINUTES')
             sh './jenkins/scripts/deliver.sh'
+            
             
         }
         
